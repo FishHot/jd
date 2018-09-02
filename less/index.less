@@ -1,0 +1,165 @@
+@import 'baseless.less';
+
+body{
+    background-color: #cccccc;
+}
+
+
+
+// 轮播图
+#slider{
+    .swiper-pagination-bullet{
+        background-color: transparent;
+        border: 0.01rem solid white;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active{
+        background-color: #fff;
+    }
+    img{
+        width: 100%;
+    }
+}
+//导航栏
+#nav{
+    padding: 0.1rem 0 ;
+    >ul{
+        display: flex;
+        flex-wrap: wrap;
+        >li{
+            width: 25%;
+
+            >a{
+                display: block;
+                text-align: center;
+                margin-top: 0.05rem;
+                >img{
+                    width: 0.4rem;
+                }
+                >p{
+                    font-size: 0.14rem;
+                    line-height: 0.22rem;
+                }
+            }
+        }
+    }
+}
+
+
+#main{
+    padding: 0.1rem 0.05rem 0.6rem;
+    background-color: #eee;
+}
+
+#seckill{
+    border: 0.01rem solid #ccc;
+    background-color: #fff;
+    .seckill-title{
+        height: 0.3rem;
+        line-height: 0.3rem;
+        .seckill-clock{
+            width: 0.2rem;
+            float: left;
+            margin-left: 0.1rem;
+        }
+        .seckill-name{
+            font-size: 0.14rem;
+            float: left;
+            margin-left: 0.1rem;
+            color: @main-color;
+        }
+        .seckill-time{
+            float: left;
+            margin-left: 0.1rem;
+            > span{
+                background-color: #000;
+                color: #ccc;
+                display: inline-block;
+                width: 0.15rem;
+                height: 0.15rem;
+                text-align: center;
+                line-height: 0.15rem;
+                &:nth-child(3n){    
+                    background-color: #fff;
+                    color:black;
+                }
+            }
+        }
+        .seckill-more{
+            float: right;
+            margin-right: 0.1rem;
+            font-size: 0.14rem;
+        }
+    }
+    .seckill-content{
+        margin: 0.1rem 0 ;
+        >ul{
+            display: flex;
+            >li{
+                flex: 1;
+                a{
+                    display: block;
+                    text-align: center;
+                    img{
+                        width: 1.1rem;
+                    }
+                    p:first-of-type{
+                        color: @main-color;
+                    }
+                    p{
+                        font-size: 0.14rem;
+                        line-height: 0.22rem;
+                    }
+                }
+            }
+        }
+    }
+}
+// 京东超市
+.jd-market{
+    margin-top: 0.05rem;
+    background-color: #fff;
+    border: 0.01rem solid #ccc;
+    .jd-market-title{
+        h3{
+            font-weight: normal;
+            font-size: 0.16rem;
+            line-height: 0.3rem;
+            padding-left: 0.3rem;
+            position: relative;
+            &::before{
+                content: '';
+                width: 0.04rem;
+                height: 0.15rem;
+                background-color: @main-color;
+                position: absolute;
+                left: 0.15rem;
+                top: 0.07rem;
+            }
+        }
+    }
+    .jd-market-goods{
+        display: flex;
+        .left{
+            flex: 1;
+            >a{
+                display: block;
+                img{
+                    width: 100%;  
+                }
+            }
+        }
+        .right{
+            flex: 1;
+            >a{
+                display: block;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+

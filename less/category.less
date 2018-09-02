@@ -1,0 +1,86 @@
+@import 'baseless.less';
+html,body{
+    height: 100%;
+}
+.layout{
+    height: 100%;
+}
+#header{
+    background-color: #eee;
+}
+#main{
+    height: 100%;
+    padding: 0.4rem 0 0.5rem;
+    overflow: hidden;
+    display: flex;
+    .categoryLeft{
+        height: 100%;
+        width: 0.85rem;
+        .swiper-container{
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide{
+            height: auto;
+                li{
+                    a{
+                        display: block;
+                        height: 0.46rem;
+                        line-height: 0.46rem;
+                        text-align: center;
+                        background-color: #eee;
+                        font-size: 0.14rem;
+                    }
+                    &.active{
+                        a{
+                            background-color: #fff;
+                            color: @main-color;
+                        }
+                    }
+                }
+            
+        }
+        
+    }
+    .categoryRight{
+        flex: 1;
+        padding: 0.1rem;
+        .swiper-container{
+            height: 100%;
+            width: 100%;
+            .swiper-slide{
+                height: auto;
+                .jd-brand{
+                    margin-top: 0.05rem;
+                    h4{
+                        height: 0.19rem;
+                        font-size: 0.14rem;
+                    }
+                    ul{
+                        display: flex;
+                        flex-wrap: wrap;
+                        li{
+                            flex: 33.33%;
+                            margin-top: 0.1rem;
+                            a{
+                                display: block;
+                                text-align: center;
+                                img{
+                                    width: 0.7rem;
+                                }
+                                span{
+                                    display: block;
+                                    font-size: 0.12rem;
+                                    margin-top: 0.05rem;
+                                }
+                            }
+                        }
+                    }
+                
+            }
+        }
+
+       
+    }
+}
+}
